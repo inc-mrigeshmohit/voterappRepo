@@ -1,0 +1,14 @@
+http://www.rainforestnet.com/datetimepicker/datetimepicker-demo1.htm
+
+@Controller
+@RequestMapping - declaration at method level
+				  declaration at class level
+
+MultiActioncontroller class is that class which has more than one request handler in a single class
+@PathVariable it will bind the name varriable with incoming request
+------------------
+GET/POST request
+@RequestParam - it takes the input request parameters from the html/jsp form
+@ModelAttribute
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.example.org/VoterDetails" 
+	xmlns:tns="http://www.example.org/VoterDetails" 
+	elementFormDefault="qualified" 
+	attributeFormDefault="unqualified">
+
+	<xs:complexType name="Voter">
+		<xs:sequence>
+			<xs:element name="VoterId" type="xs:string" />
+			<xs:element name="VoterFirstName" type="xs:string" />
+			<xs:element name="VoterMiddleName" type="xs:string" />
+			<xs:element name="VoterLaststName" type="xs:string" />
+			<xs:element name="VoterGender" type="xs:string" />
+			<xs:element name="VoterStatus" type="xs:string" />
+			<xs:element name="VoterDob" type="xs:string" />
+			<xs:element name="VoterFathersName" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

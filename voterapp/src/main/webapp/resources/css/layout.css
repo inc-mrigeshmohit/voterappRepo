@@ -1,0 +1,29 @@
+header,menu,bodylayout,footer {
+	margin: 0 0 0 0;
+}
+
+header {
+	height: 30%;
+	background-color: #b5dcb3;
+	border: 2px solid red;
+}
+
+menu {
+	float: left;
+	border: 2px solid red;
+	background-color: #eee;
+	width: 10%;
+}
+
+bodylayout {
+	float: right;
+	border: 2px solid red;
+	width: 80%;
+}
+
+footer {
+	background-color: #b5dcb3;
+	border: 2px solid red;
+	clear: both;
+	margin-bottom: 1;
+}
