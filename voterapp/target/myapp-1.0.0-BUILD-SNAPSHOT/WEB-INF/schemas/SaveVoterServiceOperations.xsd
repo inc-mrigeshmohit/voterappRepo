@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.example.org/SaveVoterServiceOperations"
+	xmlns:tns="http://www.example.org/SaveVoterServiceOperations"
+	xmlns:voter="http://www.example.org/VoterDetails"  
+	elementFormDefault="qualified">
+	
+	<xsd:import namespace="http://www.example.org/VoterDetails"
+		schemaLocation="/myapp/schemas/VoterDetails.xsd" />
+	<xsd:element name="SaveVoterRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<!-- <xsd:element name="voterDetails" type="voter:Voter" /> -->
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="SaveVoterResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<!-- <xsd:element name="voterId" type="xsd:string" /> -->
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
