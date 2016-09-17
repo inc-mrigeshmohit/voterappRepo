@@ -3,15 +3,12 @@ package com.newgen.myapp.daoimpl;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.newgen.myapp.connections.DbConnectionManager;
 import com.newgen.myapp.dao.AddressDao;
 import com.newgen.myapp.pojo.Address;
 
@@ -21,6 +18,7 @@ public class AddressDaoImpl implements AddressDao {
 
 	@Override
 	public Set<String> getStateList() {
+		return null;/*
 
 		logger.debug("inside method: getStateList()");
 		Set<String> stateSet = new LinkedHashSet<String>();
@@ -55,10 +53,11 @@ public class AddressDaoImpl implements AddressDao {
 		}
 		logger.debug("outside method: getStateList()");
 		return stateSet;
-	}
+	*/}
 
 	@Override
 	public List<String> getCityList(String stateName) {
+		return null;/*
 		// TODO Auto-generated method stub
 		logger.debug("inside method: getCityList()");
 		List<String> cityList = new ArrayList<String>();
@@ -91,10 +90,11 @@ public class AddressDaoImpl implements AddressDao {
 		}
 		logger.debug("outside method: getCityList()");
 		return cityList;
-	}
+	*/}
 
 	@Override
 	public String getCity(int cityId) {
+		return null;/*
 		// TODO Auto-generated method stub
 		logger.debug("inside method: getVoterDetails()");
 		Address address = new Address();
@@ -109,7 +109,7 @@ public class AddressDaoImpl implements AddressDao {
 						.executeQuery("select city_name from tblcitylist where state="
 								+ cityId);
 				while (rs.next()) {
-					/*
+					
 					 * voter.setVoterId(rs.getString("voter_id"));
 					 * voter.setVoterFirstName
 					 * (rs.getString("voter_first_name"));
@@ -124,7 +124,7 @@ public class AddressDaoImpl implements AddressDao {
 					 * voter.setVoterStatus(rs.getString("voter_status"));
 					 * voter.setVoterPhoneNo(rs.getInt("voter_phone_no"));
 					 * voter.setVoterEmailId(rs.getString("voter_emailid"));
-					 */
+					 
 				}
 			}
 		} catch (SQLException e) {
@@ -139,5 +139,5 @@ public class AddressDaoImpl implements AddressDao {
 		}
 		logger.debug("outside method: getVoterDetails()");
 		return null;
-	}
+	*/}
 }

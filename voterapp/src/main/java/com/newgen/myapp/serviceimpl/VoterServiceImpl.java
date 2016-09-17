@@ -36,7 +36,7 @@ public class VoterServiceImpl implements VoterService {
 	}
 
 	@Override
-	public Voter deleteVoter(String voterId) {
+	public List<Voter> deleteVoter(String voterId) {
 		return voterDao.deleteVoter(voterId);
 	}
 

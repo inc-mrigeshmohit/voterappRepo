@@ -78,7 +78,16 @@
 	<!-- Declaration of Service Layer -->
 
 	<!-- Declaration of Dao Layer -->
-	<beans:bean id="voterDao" class="com.newgen.myapp.daoimpl.VoterDaoImpl" />
-	<beans:bean id="addressDao" class="com.newgen.myapp.daoimpl.AddressDaoImpl" />
+	<!-- <beans:bean id="voterDao" class="com.newgen.myapp.daoimpl.VoterDaoImpl" 
+		/> -->
+	<!-- <beans:bean id="addressDao" class="com.newgen.myapp.daoimpl.AddressDaoImpl" 
+		/> -->
+
+	<beans:bean id="voterDao" class="com.newgen.myapp.daoimpl.JdbcVoterDaoImpl">
+		<beans:property name="dataSource" ref="dataSource" />
+	</beans:bean>
+	<beans:bean id="addressDao" class="com.newgen.myapp.daoimpl.JdbcAddressDaoImpl">
+		<beans:property name="dataSource" ref ="dataSource" />
+	</beans:bean>
 
 </beans:beans>

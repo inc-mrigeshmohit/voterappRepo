@@ -19,7 +19,7 @@ public interface VoterDao {
 
 	public String saveVoterDetails(Voter voter);
 
-	public Voter deleteVoter(String voterId);
+	public List<Voter> deleteVoter(String voterId);
 
 	public Voter updateVoterDetails(Voter voter);
 }
